@@ -1,0 +1,51 @@
+div.hire {
+    background-color: #212121;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+.hire .main-text {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.hire .main-text span {
+    display: block;
+}
+.hire .sub-text {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.hire .sub-text span {
+    display: block;
+}
+.hire .cta {
+    /* border: 1px solid rgb(92, 86, 92); */
+    width: fit-content;
+    margin: auto;
+}
+
+.hire .cta a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: all 300ms;
+}
+.hire .cta a span:first-of-type {
+    margin-right: 15px;
+}
+.hire .cta a span:last-of-type {
+    display: none;
+    transition: all 300ms;
+}
+.hire .cta a:hover span:last-of-type {
+    display: initial;
+}

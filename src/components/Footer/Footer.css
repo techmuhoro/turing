@@ -1,0 +1,112 @@
+.footer {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 30px 0;
+}
+.footer .footer-top {
+    display: flex;
+    margin-bottom: 20px;
+}
+.footer .logo {
+    /* border: 1px solid red; */
+    font-size: 1.9rem;
+    font-weight: 700;
+    width: 25%;
+}
+.footer .footer-top .links {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .footer-top .links p {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.footer .footer-top .links ul {
+    list-style: none;
+}
+.footer .footer-top .links ul li {
+    margin-bottom: 10px;
+}
+.footer .footer-top .links a {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    /* display: inline-block; */
+    position: relative;
+}
+.footer .footer-top .links a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    display: block;
+    background-color: rgb(189, 189, 189);
+    width: 0%;
+    height: 1px;
+    transition: all 300ms;
+}
+.footer .footer-top .links a:hover::before {
+    width: 100%;
+}
+
+.footer .footer-bottom {
+    /* border: 1px solid dodgerblue; */
+    display: flex;
+    align-items: center;
+}
+.footer-bottom .left {
+    color: rgb(189, 189, 189);
+}
+.footer-bottom .left p:first-of-type {
+    font-size: 0.9rem;
+}
+.footer-bottom .left p:last-of-type {
+    font-size: 0.7rem;
+}
+.footer-bottom .right {
+    margin-left: auto;
+    display: flex;
+    padding-right: 30px;
+    font-size: 0.9rem;
+    color: rgb(189, 189, 189);
+}
+.footer-bottom .right p:first-of-type {
+    margin-right: 20px;
+}
+@media screen and (max-width: 690px) {
+    .footer .footer-top {
+        flex-direction: column;
+    }
+    .footer .logo {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    .footer .footer-top .links {
+        /* width: 75%;
+        display: flex;
+        justify-content: space-around; */
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer .footer-top .links a {
+        font-size: 0.9rem;
+    }
+    .footer .footer-top .links ul li {
+        margin-bottom: 8px;
+    }
+    .footer .footer-top .links p {
+        margin-bottom: 12px;
+    }
+    .footer-bottom .right {
+        padding-right: 0;
+    }
+    .footer-bottom .left p:first-of-type {
+        font-size: 0.8rem;
+    }
+    .footer-bottom .left p:last-of-type {
+        font-size: 0.6rem;
+    }
+    .footer-bottom .right {
+        font-size: 0.8rem;
+    }
+}

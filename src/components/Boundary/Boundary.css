@@ -1,0 +1,105 @@
+.boundary {
+     /* border: 1px solid rgb(230, 230, 230); */
+     margin-bottom: 100px;
+}
+.boundary .boundary-wrapper {
+    /* border: rebeccapurple solid 1px; */
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+.boundary-wrapper .boundary-image {
+    width: 60%;
+}
+.boundary-wrapper .boundary-image > div {
+    width: 80%;
+    margin: auto;
+}
+.boundary-wrapper .boundary-image img {
+    width: 100%;
+}
+.boundary-wrapper .boundary-desc {
+    width: 40%;
+    padding-left: 50px;
+}
+.boundary-wrapper .boundary-desc .heading {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.boundary-wrapper .boundary-desc .sub-heading {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 30px;
+} 
+.boundary-wrapper .boundary-desc .cta {
+    /* border: 1px solid rgb(92, 86, 92); */
+    width: fit-content;
+}
+
+.boundary-wrapper .boundary-desc .cta a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 13px 20px;
+    border-radius: 7px;
+    transition: all 300ms;
+}
+.boundary-wrapper .boundary-desc .cta a span:first-of-type {
+    margin-right: 15px;
+}
+.boundary-wrapper .boundary-desc .cta a span:last-of-type {
+    display: none;
+    transition: all 300ms;
+}
+.boundary-wrapper .boundary-desc .cta a:hover span:last-of-type {
+    display: initial;
+}
+
+@media screen and (max-width: 690px) {
+    .boundary .boundary-wrapper {
+        height: auto;
+        flex-direction: column;
+    }
+    .boundary-wrapper .boundary-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .boundary-wrapper .boundary-desc {
+        width: 100%;
+        padding-left: 0;
+    }
+    .boundary-wrapper .boundary-desc .heading {
+        margin-bottom: 10px;
+    }
+    .boundary-wrapper .boundary-desc .sub-heading {
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        line-height: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    .boundary {
+        margin-bottom: 70px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .boundary-wrapper .boundary-desc .heading {
+        font-weight: 600;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    } 
+    .boundary-wrapper .boundary-desc .sub-heading {
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        line-height: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+    } 
+}
+

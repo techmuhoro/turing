@@ -1,0 +1,112 @@
+.testimonial {
+    height: 400px;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial .testimonial-wrapper {
+    width: 70%;
+    height: 70%;
+}
+.testimonial .testimonial-component {
+    height: 60%;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: rgba(51, 50, 50, 0.767);
+}
+.testimonial .testimonial-component  .go-left {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    left: 70px;
+    font-size: 1.5rem;
+}
+.testimonial .testimonial-component .go-right {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    right: 70px;
+    font-size: 1.5rem;
+}
+.testimonial .testimonial-text {
+    font-style: italic;
+    font-size: 1.8rem;
+    /* border: 1px solid rgb(168, 159, 168); */
+    width: 70%;
+    text-align: center;
+    font-weight: 400;
+}
+.testimonial .testimonial-buttons {
+    height: 40%;
+    width: 100%;
+    /* border: 2px solid crimson; */
+    display: flex;
+    padding: 0 120px;
+    /* padding: 0 10px 0 90px; */
+}
+.testimonial .testimonial-buttons > div {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.testimonial .testimonial-button {
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.testimonial .testimonial-button img{
+   transform: scale(0.8);
+}
+
+@media screen and (max-width: 1095px) {
+    .testimonial .testimonial-wrapper {
+        width: 100%;
+    }
+    .testimonial .testimonial-buttons {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .testimonial .testimonial-button img{
+    transform: scale(0.6);
+    }
+}
+@media screen and (max-width: 768px) {
+    .testimonial .testimonial-text {
+        width: 95%;
+    } 
+    .testimonial .testimonial-component  .go-left {
+        left: 10px;
+    }
+    .testimonial .testimonial-component .go-right {
+        right: 10px;
+    }
+    /* .testimonial .testimonial-buttons {
+        width: 100%;
+        padding: 0 20px;
+        border: gold solid 1px;
+    } */
+}
+@media screen and (max-width: 690px) {
+    .testimonial .testimonial-text {
+        font-size: 1.1rem;
+    }  
+    .testimonial .testimonial-text {
+        width: 85%;
+    } 
+    .testimonial .testimonial-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+    }
+    .testimonial .testimonial-buttons > div {
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,122 @@
+.talent {
+     margin-bottom: 100px;
+}
+.talent .talent-wrapper {
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+.talent-wrapper .talent-desc {
+    width: 45%;
+    padding-right: 100px;
+}
+.talent-wrapper .talent-desc .heading {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.talent-wrapper .talent-desc .sub-heading {
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    line-height: 1.6rem;
+    margin-bottom: 30px;
+} 
+.talent-wrapper .talent-desc .cta {
+    width: fit-content;
+}
+
+.talent-wrapper .talent-desc .cta a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 13px 20px;
+    border-radius: 7px;
+    transition: all 300ms;
+}
+.talent-wrapper .talent-desc .cta a span:first-of-type {
+    margin-right: 15px;
+}
+.talent-wrapper .talent-desc .cta a span:last-of-type {
+    display: none;
+    transition: all 300ms;
+}
+.talent-wrapper .talent-desc .cta a:hover span:last-of-type {
+    display: initial;
+}
+
+.talent-wrapper .talent-image {
+    width: 55%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.talent-wrapper .talent-image::-webkit-scrollbar {
+    display: none;
+}
+.talent-wrapper .talent-image img {
+    width: 100%;
+}
+.talent-wrapper .talent-image a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 300ms;
+    display: none;
+}
+.talent-wrapper .talent-image a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 690px) {
+    .talent .talent-wrapper {
+        height: auto;
+        flex-direction: column;
+    }
+    .talent-wrapper .talent-desc {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .talent-wrapper .talent-desc .heading {
+        margin-bottom: 10px;
+    }
+    .talent-wrapper .talent-desc .sub-heading {
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        line-height: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+    } 
+    .talent-wrapper .talent-image {
+        width: 100%;
+        height: 750px;
+        overflow-y: hidden;
+        position: relative;
+        /* border: dodgerblue 2px solid; */
+    }
+    .talent-wrapper .talent-image a {
+        display: initial;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .talent-wrapper .talent-desc .heading  {
+        font-weight: 600;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    } 
+    .talent-wrapper .talent-desc .sub-heading{
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        line-height: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+    } 
+}

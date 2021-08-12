@@ -1,0 +1,122 @@
+.skills {
+     margin-bottom: 100px;
+}
+.skills .skills-wrapper {
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.skills-wrapper .skills-image {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: turquoise; */
+}
+.skills-wrapper .skills-image > div {
+    height: 100%;
+    width: 95%;
+}
+.skills-wrapper .skills-image > div img {
+    width: 100%;
+    height: 100%;
+}
+.skills-wrapper .skills-desc {
+    width: 40%;
+    padding-left: 30px;
+    /* background-color: salmon; */
+}
+.skills-wrapper .skills-desc .heading {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.skills-wrapper .skills-desc .sub-heading {
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    line-height: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+} 
+.skills-wrapper .skills-desc .cta {
+    /* border: 1px solid rgb(92, 86, 92); */
+    width: fit-content;
+}
+
+.skills-wrapper .skills-desc .cta a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 13px 20px;
+    border-radius: 7px;
+    transition: all 300ms;
+}
+.skills-wrapper .skills-desc .cta a span:first-of-type {
+    margin-right: 15px;
+}
+.skills-wrapper .skills-desc .cta a span:last-of-type {
+    display: none;
+    transition: all 300ms;
+}
+.skills-wrapper .skills-desc .cta a:hover span:last-of-type {
+    display: initial;
+}
+
+@media screen and (max-width: 690px) {
+    .skills {
+        margin-bottom: 70px !important;
+    }
+    .skills .skills-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    .skills-wrapper .skills-image {
+        width: 100%;
+        padding: 0;
+        height: 430px;
+    }
+    .skills-wrapper .skills-image > div {
+        height: 100% !important;
+    } 
+    .skills-wrapper .skills-desc {
+        width: 100%;
+        padding-left: 0;
+    }
+    .skills-wrapper .skills-desc .heading {
+        margin-bottom: 10px;
+    }
+    .skills-wrapper .skills-desc .sub-heading {
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        line-height: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    .skills-wrapper .skills-image > div img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .skills-wrapper .skills-desc .heading {
+        font-weight: 600;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    } 
+    .skills-wrapper .skills-desc .sub-heading {
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        line-height: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }  
+    .skills-wrapper .skills-image > div {
+        height: 70%;
+    } 
+}
